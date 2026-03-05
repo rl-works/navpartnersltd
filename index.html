@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="htmlTag">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -62,31 +62,44 @@
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/img/navpart-logo-2.jpg" alt="">
 
-          <h1 class="sitename">Navigation Partners Ltd.</h1>
+          <h4 class="sitename">Navigation Partners Ltd.</h4>
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="departments.html">Job Application</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+         <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+  
+              <li><a href="about.html">About Us</a></li>
+  
+              <li><a href="departments.html">
+                    <span style="display:none;">Employment Registration</span>Job Application
+                  </a></li>
+  
+              <li><a href="services.html">Services</a></li>
+  
+              <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <!-- <li><a href="department-details.html">Department Details</a></li> -->
-              <!-- <li><a href="service-details.html">Service Details</a></li> -->
-              <li><a href="appointment.html">Appointment</a></li>
-              <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+              <li><a href="appointment.html">
+                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                  </a></li>
+      
               <li><a href="faq.html">Frequently Asked Questions</a></li>
+      
               <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <!-- <li><a href="404.html">404</a></li> -->
-            </ul>
-            </li>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-             <li>
+      
+              <li><a href="terms.html">
+                    <span style="display:none;">Terms and Conditions</span>Terms
+                  </a></li>
+      
+              <li><a href="privacy.html">
+                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                  </a></li>
+              </ul>
+              </li>
+  
+              <li><a href="contact.html">Contact Us</a></li>
+          <!-- </ul>
+             <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
@@ -108,42 +121,39 @@
 
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
+        // Ensure we don't loop if already in English
+        if (!savedLang || savedLang === 'en') return;
+
         const select = document.querySelector('.gt_selector');
         
-        // If we have a saved lang (and it's not the default English)
-        if (savedLang && savedLang !== 'en' && select) {
+        if (select && typeof doGTranslate === 'function') {
             if (select.value !== savedLang) {
-                // Set the value
+                // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                
-                // Trigger the logic
-                select.dispatchEvent(new Event('change', { bubbles: true }));
-                if (typeof doGTranslate === 'function') {
-                    doGTranslate('en|' + savedLang);
-                }
-                console.log("GitHub Pages: Auto-translated to " + savedLang);
+                doGTranslate('en|' + savedLang);
+                console.log("Context updated to: " + savedLang);
             }
         }
     }
 
-    // Capture manual changes to save them for the next page
+    // Capture user selection
     document.addEventListener('change', function(e) {
         if (e.target && e.target.classList.contains('gt_selector')) {
-            localStorage.setItem(STORAGE_KEY, e.target.value);
+            const selectedLang = e.target.value.split('|')[1] || e.target.value;
+            localStorage.setItem(STORAGE_KEY, selectedLang);
         }
     });
 
-    // Check for the widget every 300ms for up to 5 seconds
-    let count = 0;
-    const interval = setInterval(() => {
+    // Check for initialization with a cleaner exit
+    let attempts = 0;
+    const checkWidget = setInterval(() => {
         const select = document.querySelector('.gt_selector');
-        if (select) {
+        if (select && typeof doGTranslate === 'function') {
             applySavedLanguage();
-            // We don't clear the interval yet because GTranslate 
-            // sometimes resets itself 1 second after loading.
+            clearInterval(checkWidget); // Stop once found and applied
         }
-        if (count++ > 20) clearInterval(interval);
-    }, 300);
+        if (attempts++ > 30) clearInterval(checkWidget);
+    }, 200);
 })();
 </script>
 
@@ -183,10 +193,10 @@
                 <br>
                 <h3>Registered Support Organization for Specified Skilled Workers</h3>
               </p> -->
-
+                <br>
               <h3>Registered Support Organization for Specified Skilled Workers</h3>
 
-              <div class="hero-stats mb-4" data-aos="fade-right" data-aos-delay="500">
+              <!-- <div class="hero-stats mb-4" data-aos="fade-right" data-aos-delay="500">
                 <div class="stat-item">
                   <h3 data-i18n="hero_title"><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2"
                       class="purecounter"></span>+</h3>
@@ -202,7 +212,7 @@
                       class="purecounter"></span>+</h3>
                   <p>Expert Staffs</p>
                 </div>
-              </div>
+              </div> -->
 
               <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
                 <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
@@ -219,7 +229,7 @@
                 </div>
                 <div class="emergency-info">
                   <small>Contact  Us</small>
-                  <strong>+81-70-2494-4186</strong>
+                  <strong>070-2494-2145</strong>
                 </div>
               </div>
             </div>
@@ -400,17 +410,32 @@
           <div class="row align-items-center">
             <div class="col-lg-8">
               <div class="emergency-content">
-                <h3>BUSINESS ACTIVITIES</h3>
-                <h2 style="color: white;"><i class="bi bi-star"></i> REGISTERED SUPPORT ORGANIZATION (SSW)</h2>
-                <h2 style="color: white;"><i class="bi bi-star"></i> MANUFACTURING CONTRACTING</h2>
-                <h2 style="color: white;"><i class="bi bi-star"></i> PAID EMPLOYMENT PLACEMENT</h2>
-                <h2 style="color: white;"><i class="bi bi-star"></i> SUPPORT SERVICES</h2>
-              </div>
+                  <h3>BUSINESS ACTIVITIES</h3>
+                      <h2 style="color: white;">
+                        <span style="display:none;">Visa Support Agency for Foreign Workers</span>
+                        <i class="bi bi-star"></i> REGISTERED SUPPORT ORGANIZATION (SSW)
+                      </h2>
+
+                      <h2 style="color: white;">
+                        <span style="display:none;">Industrial Outsourcing and Production Contracts</span>
+                        <i class="bi bi-star"></i> MANUFACTURING CONTRACTING
+                      </h2>
+
+                      <h2 style="color: white;">
+                        <span style="display:none;">Recruitment Agency and Job Referral License</span>
+                        <i class="bi bi-star"></i> FEE-CHARGING EMPLOYMENT PLACEMENT
+                      </h2>
+
+                      <h2 style="color: white;">
+                        <span style="display:none;">Comprehensive Lifestyle and Working Support</span>
+                        <i class="bi bi-star"></i> SUPPORT SERVICES
+                      </h2>
+                </div>
             </div>
             <div class="col-lg-4 text-lg-end">
               <a href="tel:+81-70-2494-4186" class="emergency-btn">
                 <i class="bi bi-telephone-fill"></i>
-                Call Us Now: +81-70-2494-4186
+                Call Us Now: 070-2494-2145
               </a>
             </div>
           </div>
@@ -611,7 +636,7 @@
           <div class="col-lg-5">
             <div class="brand-section">
               <a href="index.html" class="logo d-flex align-items-center mb-4">
-                <span class="sitename">Navigation Partners Ltd.</span>
+                <span class="sitename"  translate="no">Navigation Partners Ltd.</span>
               </a>
               <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
               <p>Registered Support Organization for Specified Skilled Workers</p>

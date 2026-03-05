@@ -6338,3 +6338,11 @@ section,
     left: 0%;
   }
 }
+
+/*for translation content adjustment*/
+.emergency-content h2 {
+    height: auto;           /* Allows the box to grow if the text wraps */
+    line-height: 1.4;       /* Gives breathing room for Myanmar/Japanese characters */
+    word-wrap: break-word;  /* Prevents long Vietnamese words from breaking the layout */
+    margin-bottom: 15px;    /* Adds space between the star-icons */
+}
