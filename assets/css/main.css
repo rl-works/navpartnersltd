@@ -6346,3 +6346,21 @@ section,
     word-wrap: break-word;  /* Prevents long Vietnamese words from breaking the layout */
     margin-bottom: 15px;    /* Adds space between the star-icons */
 }
+
+
+/*for Japanese font design*/
+
+.japanese-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #444;
+  background: #f8f9fa;
+  padding: 15px;
+}
