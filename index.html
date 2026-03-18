@@ -852,6 +852,23 @@ function startObserving() {
 startObserving();
 </script>
 
+<!--Setting to japanese language during first visit-->
+<script>
+        window.addEventListener('load', function() {
+            let savedLang = localStorage.getItem('selectedLanguage');
+
+            if (!savedLang) {
+                // If the user hasn't chosen a language yet, default to Japanese
+                if (typeof doGTranslate === "function") {
+                    doGTranslate('en|ja'); 
+                    localStorage.setItem('selectedLanguage', 'ja');
+                }
+            }
+        });
+    </script>
+
+
+
 </body>
 
 </html>
