@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About-Navigation Partners Ltd</title>
+  <title translate="no">About-Navigation Partners Ltd</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -66,47 +66,48 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-  
-              <li><a href="about.html" class="active">About Us</a></li>
-  
+            <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="about.html" class="active">会社案内</a></li>
+              <!-- Job application -->
               <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -121,7 +122,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -129,7 +130,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -175,8 +176,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-11">
-              <h1 class="heading-title">About Us</h1>
-                <p class="mb-0" style="font-weight: bold; font-size: 1.1rem;">
+              <h1 class="heading-title">会社案内</h1>
+                <!-- <p class="mb-0" style="font-weight: bold; font-size: 1.1rem;">
                     NAVIGATION PARTNERS LTD. is a registered support organization dedicated to connecting foreign talent with Japanese companies.
                 </p> 
 
@@ -186,7 +187,29 @@
 
                 <p style="font-weight: bold; font-size: 1.1rem;">
                     Licensed as a Registered Support Organization in January 2026, we are committed to delivering trustworthy and high-quality support services.
-              </p>
+              </p> -->
+              <div class="company-intro" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.8; color: #333;">
+
+                <p class="mb-0" style="font-weight: bold; font-size: 1.1rem; word-break: keep-all; margin-bottom: 20px;">
+                  <span style="display:inline-block;">NAVIGATION PARTNERS株式会社は、</span>
+                  <span style="display:inline-block;">外国籍の人材と</span><span style="display:inline-block;">日本企業を繋ぐ</span>
+                  <span style="display:inline-block;">登録支援機関です。</span>
+                </p>
+
+                <p style="font-weight: bold; font-size: 1.1rem; word-break: keep-all; margin-bottom: 20px;">
+                  <span style="display:inline-block;">私たちは、</span><span style="display:inline-block;">専門的で信頼性が高く、</span>
+                  <span style="display:inline-block;">誠実なサポートを</span><span style="display:inline-block;">提供することで、</span>
+                  <span style="display:inline-block;">雇用主と外国籍の皆様が</span><span style="display:inline-block;">長期的に成功できる</span>
+                  <span style="display:inline-block;">パートナーシップの構築を</span><span style="display:inline-block;">支援いたします。</span>
+                </p>
+
+                <p style="font-weight: bold; font-size: 1.1rem; word-break: keep-all;">
+                  <span style="display:inline-block;">2026年1月に</span><span style="display:inline-block;">登録支援機関として</span>
+                  <span style="display:inline-block;">認可を受けて以来、</span><span style="display:inline-block;">私たちは信頼のおける</span>
+                  <span style="display:inline-block;">高品質な支援サービスの</span><span style="display:inline-block;">提供に努めております。</span>
+                </p>
+                
+              </div>
               
             </div>
           </div>
@@ -195,8 +218,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li><a href="index.html">ホーム</a></li>
+            <li class="current">会社案内</li>
           </ol>
         </div>
       </nav>
@@ -210,8 +233,8 @@
         <div class="row align-items-center">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <div class="about-content" style="font-weight: bold; line-height:1.9;">
-              <h2>Company Profile</h2>
-               <p class="mb-0" translate="no">
+              <h2>会社案内</h2>
+               <!-- <p class="mb-0" translate="no">
                 Company Name: <b> NAVIGATION PARTNERS LTD </b></p><br>
               <p>  Representative Director: <b>Naoto Takano</b><br>
                    Registered Support Organization No.: <b> 26登-012962 </b><br>
@@ -229,54 +252,119 @@
 
                 <div style="font-weight: bold; font-size: 2rem; line-height: 1.2;">
   
-  <p style="margin: 0 0 5px 0;">Business Activities</p>
-  
-  <p style="margin: 0;">
-    <span style="display:none;">Visa Support Agency for Foreign Workers</span>
-    • Registered Support Organization (SSW)
-  </p>
-  
-  <p style="margin: 0;">
-    <span style="display:none;">Industrial Outsourcing and Production Contracts</span>
-    • Manufacturing Contracting
-  </p>
-  
-  <p style="margin: 0;">
-    <span style="display:none;">Fee-Charging Employment Placement</span>
-  • Fee-Charging Employment Placement
-  </p>
-  
-  <p style="margin: 0;">
-    <span style="display:none;">Comprehensive Lifestyle and Working Support</span>
-    • Life Support Services
-  </p>
+              <p style="margin: 0 0 5px 0;">Business Activities</p>
+              
+              <p style="margin: 0;">
+                <span style="display:none;">Visa Support Agency for Foreign Workers</span>
+                • Registered Support Organization (SSW)
+              </p>
+              
+              <p style="margin: 0;">
+                <span style="display:none;">Industrial Outsourcing and Production Contracts</span>
+                • Manufacturing Contracting
+              </p>
+              
+              <p style="margin: 0;">
+                <span style="display:none;">Fee-Charging Employment Placement</span>
+              • Fee-Charging Employment Placement
+              </p>
+              
+              <p style="margin: 0;">
+                <span style="display:none;">Comprehensive Lifestyle and Working Support</span>
+                • Life Support Services
+              </p>
 
-  <p style="margin: 15px 0 0 0;">Email:</p>
-  <p style="margin: 0;">worker_support@naviners.com</p>
+              <p style="margin: 15px 0 0 0;">Email:</p>
+              <p style="margin: 0;">worker_support@naviners.com</p> -->
 
+              <div class="company-profile" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.8; color: #333; max-width: 600px;">
+
+  <div style="margin-bottom: 30px;">
+    <p style="margin-bottom: 8px;">
+      <span style="display:inline-block; width: 120px; color: #666;">会社名</span>
+      <b style="font-size: 1.1rem;" translate="no">NAVIGATION PARTNERS LTD.</b>
+    </p>
+    <p style="margin-bottom: 8px;">
+      <span style="display:inline-block; width: 120px; color: #666;">代表取締役</span>
+      <b translate="no">NAOTO TAKANO</b>
+    </p>
+    <p style="margin-bottom: 8px;">
+      <span style="display:inline-block; width: 120px; color: #666;">登録支援機関番号</span>
+      <b style="letter-spacing: 0.05em;">26登-012962</b>
+    </p>
+    <p style="margin-bottom: 8px;">
+      <span style="display:inline-block; width: 120px; color: #666;">設立</span>
+      <b>2025年10月18日</b>
+    </p>
+  </div>
+
+  <div style="margin-bottom: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+    <p style="font-weight: bold; margin-bottom: 5px; color: #1a62d6;">所在地</p>
+    <p style="margin: 0; word-break: keep-all;">
+      <span style="display:inline-block;">〒871-0058</span><br>
+      <span style="display:inline-block;">大分県中津市豊田町8-10</span><br>
+      <span style="display:inline-block;">アイエヌジービルII 401号室</span>
+    </p>
+  </div>
+
+  <div style="margin-bottom: 30px;">
+    <p style="margin: 0;">Tel: <span style="letter-spacing: 0.05em;">0979-33-8686</span></p>
+    <p style="margin: 0;">Fax: <span style="letter-spacing: 0.05em;">0979-33-8687</span></p>
+    <p style="margin: 0;">Mobile: <span style="letter-spacing: 0.05em;">070-2494-2145</span></p>
+    <p style="margin: 10px 0 0 0;">Email: <a href="mailto:worker_support@naviners.com" style="color: #1a62d6; text-decoration: none;">worker_support@naviners.com</a></p>
+  </div>
+
+  <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+    <h3 style="font-size: 1.2rem; margin: 0 0 15px 0; color: #333; border-bottom: 2px solid #1a62d6; display: inline-block;">事業活動/h3>
+    
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <p style="margin: 0; display: flex; align-items: flex-start; word-break: keep-all;">
+        <span style="color: #1a62d6; margin-right: 10px;">•</span>
+        <span><b>登録支援機関</b></span>
+      </p>
+      
+      <p style="margin: 0; display: flex; align-items: flex-start; word-break: keep-all;">
+        <span style="color: #1a62d6; margin-right: 10px;">•</span>
+        <span><b>人材紹介</b> （特定技能）</span>
+      </p>
+      
+      <p style="margin: 0; display: flex; align-items: flex-start; word-break: keep-all;">
+        <span style="color: #1a62d6; margin-right: 10px;">•</span>
+        <span><b>外国人材支援事業</b></span>
+      </p>
+      
+      <p style="margin: 0; display: flex; align-items: flex-start; word-break: keep-all;">
+        <span style="color: #1a62d6; margin-right: 10px;">•</span>
+        <span><b>自動車部品 製造請負事業</b></span>
+      </p>
+    </div>
+  </div>
+
+
+  
 </div>
+
+            </div>
 
 
             </div>
             
             <!-- End About Content -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="image-wrapper">
               <img src="assets/img/navpart-banner-2.jpg" class="img-fluid main-image" alt="Officers and Staff">
-              <!-- <div class="floating-image" data-aos="zoom-in" data-aos-delay="400">
-                <img src="assets/img/person/naoto-takano.jpg" class="img-fluid" alt="Naoto Takano" >
-              </div> -->
             </div><!-- End Image Wrapper -->
           </div>
+          </div>
+
+          
         </div>
 
         <!--Company History-->
         <div class="values-section" data-aos="fade-up" data-aos-delay="300">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h3>Company History</h3>
+              <h3>会社沿革</h3>
             </div>
           </div>
 
@@ -297,21 +385,22 @@
       <div class="timeline right">
         <div class="card">
           <div class="card-body p-4">
-            <h3>October 1992</h3>
+            <h3>1992年10月</h3>
             <!-- <p class="mb-0">Hosokawa Jishō  (current Chairman) founded <span translate="no">M&H Motors LTD</span> and appointed as Representative Director</p> -->
-             <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">
-                  Hosokawa Jisho  (current Chairman) founded M&H Motors LTD.
-                    <!-- <span translate="no">M&H Motors LTD</span>  -->
-                    and was appointed as Representative Director.
-              </p>
+             <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.6; margin: 0; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif;">
+              <span style="display:inline-block;">細川 慈照（現会長）が</span>
+              <span style="display:inline-block;">エムアンドエイチモータース有限会社</span><span style="display:inline-block;">設立し、</span>
+              
+              <span style="display:inline-block;"> 代表取締役に</span><span style="display:inline-block;">就任しました。</span>
+            </p>
           </div>
         </div>
       </div>
       <div class="timeline left">
         <div class="card">
           <div class="card-body p-4">
-            <h3>June 2025</h3>
-            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">Company name changed to NAVIGATION PARTNERS LTD and Mr. Naoto Takano was appointed as Representative Director
+            <h3>2025年6月</h3>
+            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">社名をNAVIGATION PARTNERS LTDに変更し、代表取締役として高野直人氏が就任しました
             </p>
           </div>
         </div>
@@ -319,24 +408,24 @@
       <div class="timeline right">
         <div class="card">
           <div class="card-body p-4">
-            <h3>September 2025</h3>
-            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">Capital increased to 5 million yen</p>
+            <h3>2025年9月</h3>
+            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">資本金を500万円に増資</p>
           </div>
         </div>
       </div>
       <div class="timeline left">
         <div class="card">
           <div class="card-body p-4">
-            <h3>October 2025</h3>
-            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">NAVIGATION PARTNERS LTD. commenced operations under the new structure</p>
+            <h3>2025年10月</h3>
+            <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">NAVIGATION PARTNERS LTD.は新体制の下で事業を開始した。</p>
           </div>
         </div>
       </div>
       <div class="timeline right">
         <div class="card">
           <div class="card-body p-4">
-            <h3>January 2026</h3>
-           <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">Licensed as a Registered Support Organization for Specified Skilled Workers.</p>
+            <h3>2026年1月</h3>
+           <p style="font-weight: bold; font-size: 1.15rem; line-height: 1.4; margin: 0;">特定熟練労働者向け登録支援機関として認可されました</p>
           </div>
         </div>
       </div>
@@ -351,7 +440,7 @@
           <div class="values-section" data-aos="fade-up" data-aos-delay="300">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h3>Meet Our Officers and Staff</h3>
+              <h3>役員とスタッフをご紹介します</h3>
             </div>
           </div>
           <section id="departments-tabs" class="departments-tabs section">
@@ -366,25 +455,25 @@
                   data-aos-delay="400">
                   <a class="nav-link department-tab active" id="neurology-tab" data-bs-toggle="pill"
                     href="#departments-tabs-neurology" role="tab" aria-controls="departments-tabs-neurology"
-                    aria-selected="true" data-aos="fade-up" data-aos-delay="100">President and CEO</a>
+                    aria-selected="true" data-aos="fade-up" data-aos-delay="100">社長兼CEO</a>
                   <a class="nav-link department-tab" id="surgery-tab" data-bs-toggle="pill"
                     href="#departments-tabs-surgery" role="tab" aria-controls="departments-tabs-surgery"
-                    aria-selected="false" data-aos="fade-up" data-aos-delay="150">Chairman</a>
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="150">会長</a>
                   <a class="nav-link department-tab" id="dental-tab" data-bs-toggle="pill"
                     href="#departments-tabs-dental" role="tab" aria-controls="departments-tabs-dental"
-                    aria-selected="false" data-aos="fade-up" data-aos-delay="200">Advisor / Administrative Scrivener</a>
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="200">顧問／事務担当</a>
                   <a class="nav-link department-tab" id="ophthalmology-tab" data-bs-toggle="pill"
                     href="#departments-tabs-ophthalmology" role="tab" aria-controls="departments-tabs-ophthalmology"
-                    aria-selected="false" data-aos="fade-up" data-aos-delay="250">Executive Managing Director</a>
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="250">専務取締役</a>
                   <a class="nav-link department-tab" id="cardiology-tab" data-bs-toggle="pill"
                     href="#departments-tabs-cardiology" role="tab" aria-controls="departments-tabs-cardiology"
-                    aria-selected="false" data-aos="fade-up" data-aos-delay="300">Administration Department-Vietnam Representative </a>
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="300">管理部ベトナム代表</a>
                   <!-- <a class="nav-link department-tab" id="cardiology-tab" data-bs-toggle="pill"
                     href="#departments-tabs-myanmar" role="tab" aria-controls="departments-tabs-myanmar"
                     aria-selected="false" data-aos="fade-up" data-aos-delay="300">Administration Department-Myanmar Representative </a> -->
                   <a class="nav-link department-tab" id="cardiology-tab" data-bs-toggle="pill"
                     href="#departments-tabs-office-manager" role="tab" aria-controls="departments-tabs-office-manager"
-                    aria-selected="false" data-aos="fade-up" data-aos-delay="300">Office Manager</a>
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="300">オフィス マネージャー</a>
                 </div>
               </div>
             </div>
@@ -413,7 +502,7 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-size: 2rem; margin-bottom: 15px;">NAOTO TAKANO</h2>
     
-    <p class="department-description" style="font-weight: bold; font-size: 1.2rem; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word;">
+    <!-- <p class="department-description" style="font-weight: bold; font-size: 1.2rem; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word;">
       With practical experience in supporting foreign workers, Mr. Takano is dedicated to 
       <span style="display: inline-block;">creating a safe and reliable</span> environment for both companies and international talent.
       <br><br>
@@ -421,8 +510,28 @@
       their employment from a <span style="display: inline-block;">long-term perspective.</span>
       <br><br>
       As President and CEO, he strives to provide services that contribute to the growth of both the local community and partner businesses.
-    </p>
-  
+    </p> -->
+      <div class="ceo-description" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; font-weight: bold; font-size: 1.15rem; line-height: 1.8; color: #333;">
+
+  <p style="margin-bottom: 25px; word-break: keep-all; overflow-wrap: anywhere;">
+    <span style="display:inline-block;">外国人労働者のサポートに関する</span><span style="display:inline-block;">実務経験を持つ高野氏は、</span>
+    <span style="display:inline-block;">企業と国際的な人材の</span><span style="display:inline-block;">双方にとって、</span>
+    <span style="display:inline-block;">安全で信頼性の高い</span><span style="display:inline-block;">環境づくりに尽力しています。</span>
+  </p>
+
+  <p style="margin-bottom: 25px; word-break: keep-all; overflow-wrap: anywhere;">
+    <span style="display:inline-block;">彼は強固な関係を重視し、</span><span style="display:inline-block;">長期的な視点から</span>
+    <span style="display:inline-block;">従業員が雇用を継続できるような</span><span style="display:inline-block;">システムの構築に</span>
+    <span style="display:inline-block;">注力しています。</span>
+  </p>
+
+  <p style="margin: 0; word-break: keep-all; overflow-wrap: anywhere;">
+    <span style="display:inline-block;">社長兼CEOとして、</span>
+    <span style="display:inline-block;">地域社会とパートナー企業の</span><span style="display:inline-block;">双方の成長に貢献する</span>
+    <span style="display:inline-block;">サービスの提供に</span><span style="display:inline-block;">全力を尽くしています。</span>
+  </p>
+
+</div>
 
                         <!-- <h3>Key Responsibilites</h3>
                         <div class="row mt-4">
@@ -495,11 +604,31 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-weight: bold;">HOSOKAWA JISHO</h2>
     
-    <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
+    <!-- <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
       Hosokawa Jisho has been actively involved in community and business activities for many years, supporting various projects through his extensive experience and wide network. <br>
       He values human connections and upholds a philosophy of building honest and trustworthy organizations. <br>
       As Chairman, he is committed to supporting the next generation and foreign talent, and to promoting business initiatives that contribute to the development of the local community.
-    </p>
+    </p> -->
+   <div class="profile-section" style="line-height: 1.8; color: #333; font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; font-size: 1.1rem; font-weight: bold;">
+  
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">細川慈照氏は長年にわたり、</span>
+    <span style="display: inline-block;">豊富な経験と幅広いネットワークを活かし、</span><br>
+    <span style="display: inline-block;">地域社会やビジネス活動に積極的に携わり、</span>
+    <span style="display: inline-block;">様々なプロジェクトを支援してきました。</span>
+  </p>
+
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">人の繋がりを大切にし、</span>
+    <span style="display: inline-block;">誠実で信頼できる組織づくりを信条としています。</span>
+  </p>
+
+  <p>
+    <span style="display: inline-block;">会長として、次世代や外国人人材の育成、</span>
+    <span style="display: inline-block;">地域社会の発展に貢献する事業の推進に尽力しています。</span>
+  </p>
+
+</div>
                         <!-- <h2 class="department-title">Key Responsibilities</h2>
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -571,11 +700,31 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-weight: bold;">TOMOHITO YANO</h2>
     
-    <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
+    <!-- <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
       Tomohito Yano works as an administrative scrivener, handling corporate legal matters and various administrative procedures. <br>
       With a commitment to accuracy and prompt service, he supports the creation of a safe and reliable environment for both companies and foreign workers. <br>
       As an advisor, he contributes to the company’s stable operations and growth through legal support.
-    </p>
+    </p> -->
+    <div class="profile-section" style="line-height: 1.8; color: #333; font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; font-size: 1.1rem; font-weight: bold;">
+  
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">矢野智仁氏は行政書士として、</span>
+    <span style="display: inline-block;">企業の法務や様々な行政手続きを担当しています。</span>
+  </p>
+
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">正確かつ迅速な対応を信条とし、</span>
+    <span style="display: inline-block;">企業と外国人労働者の双方にとって、</span>
+    <span style="display: inline-block;">安全で信頼性の高い環境づくりをサポートしています。</span>
+  </p>
+
+  <p>
+    <span style="display: inline-block;">アドバイザーとして、</span>
+    <span style="display: inline-block;">法務面からのサポートを通じて、</span>
+    <span style="display: inline-block;">企業の安定した運営と成長に貢献しています。</span>
+  </p>
+
+</div>
                           <!-- <h2 class="department-title">Key Responsibilities</h2>
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -647,11 +796,35 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-weight: bold;">ARSYLLE</h2>
     
-    <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
+    <!-- <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
       With an international perspective and hands-on experience, Arsylle plays a key role in connecting foreign talent with Japanese companies. <br>
       She values personalized and attentive support for each individual, working to create a safe and comfortable environment where everyone can thrive. <br>
       As Executive Director, she is committed to strengthening company operations, improving services, and contributing to the growth of both the local community and partner businesses.
-    </p>
+    </p> -->
+    <div class="profile-section" style="line-height: 1.8; color: #333; font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; font-size: 1.1rem; font-weight: bold;">
+  
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">国際的な視点と実務経験を持つ</span>
+    <span style="display: inline-block;">Arsylle氏は、</span>
+    <span style="display: inline-block;">外国人材と日本企業を繋ぐ</span>
+    <span style="display: inline-block;">重要な役割を担っています。</span>
+  </p>
+
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">一人ひとりに寄り添った</span>
+    <span style="display: inline-block;">丁寧なサポートを大切にし、</span>
+    <span style="display: inline-block;">誰もが安心して活躍できる</span>
+    <span style="display: inline-block;">環境づくりに努めています。</span>
+  </p>
+
+  <p>
+    <span style="display: inline-block;">常務取締役として、</span>
+    <span style="display: inline-block;">運営体制の強化やサービスの向上に尽力し、</span>
+    <span style="display: inline-block;">地域社会とパートナー企業の</span>
+    <span style="display: inline-block;">双方の成長に貢献しています。</span>
+  </p>
+
+</div>
                           <!-- <h2 class="department-title">Key Responsibilities</h2>
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -725,11 +898,34 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-weight: bold;">LYLY</h2>
     
-    <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
+    <!-- <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
       She is in charge of administrative support for Vietnamese workers and companies. <br>
       With a friendly and attentive approach, she provides smooth communication and daily support to ensure a comfortable working environment. <br>
       She plays an important role in connecting Vietnamese staff with the company and supporting stable operations.
-    </p>
+    </p> -->
+    <div class="profile-section" style="line-height: 1.8; color: #333; font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; font-size: 1.1rem; font-weight: bold;">
+  
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">彼女はベトナム人労働者と</span>
+    <span style="display: inline-block;">企業への管理・事務サポートを</span>
+    <span style="display: inline-block;">担当しています。</span>
+  </p>
+
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">親しみやすく丁寧な対応を心がけ、</span>
+    <span style="display: inline-block;">円滑なコミュニケーションと</span>
+    <span style="display: inline-block;">日々のサポートを通じて、</span>
+    <span style="display: inline-block;">安心して働ける環境づくりを</span>
+    <span style="display: inline-block;">提供しています。</span>
+  </p>
+
+  <p>
+    <span style="display: inline-block;">ベトナム人スタッフと企業を繋ぐ</span>
+    <span style="display: inline-block;">重要な役割を担い、</span>
+    <span style="display: inline-block;">安定した事業運営を支えています。</span>
+  </p>
+
+</div>
                           <!-- <h2 class="department-title">Key Responsibilities</h2>
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -868,11 +1064,38 @@
   <div class="department-info">
     <h2 class="department-title" translate="no" style="font-weight: bold;">ARIYOSHI HATSUMI</h2>
     
-    <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
+    <!-- <p class="department-description" lang="ja" style="font-weight: bold; word-break: keep-all; line-height: 1.6;">
       As the Office Manager of NAVIGATION PARTNERS Ltd, I oversee general administrative operations and support services for foreign workers. <br>
       I am committed to creating a safe and comfortable working environment for both companies and international staff, with a focus on careful, prompt, and reliable service. <br>
       By making use of my experience, I strive to build smooth communication and strong relationships with everyone we work with.
-    </p>
+    </p> -->
+
+    <div class="profile-section" style="line-height: 1.8; color: #333; font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; font-size: 1.1rem; font-weight: bold;">
+  
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">株式会社 NAVIGATION PARTNERS の</span>
+    <span style="display: inline-block;">オフィスマネージャーとして、</span>
+    <span style="display: inline-block;">事務全般の管理および</span>
+    <span style="display: inline-block;">外国人労働者へのサポート業務を</span>
+    <span style="display: inline-block;">統括しています。</span>
+  </p>
+
+  <p style="margin-bottom: 1.5rem;">
+    <span style="display: inline-block;">丁寧・迅速・誠実な対応をモットーに、</span>
+    <span style="display: inline-block;">企業と外国人スタッフの双方が</span>
+    <span style="display: inline-block;">安心して働ける環境づくりに</span>
+    <span style="display: inline-block;">尽力しています。</span>
+  </p>
+
+  <p>
+    <span style="display: inline-block;">これまでの経験を活かし、</span>
+    <span style="display: inline-block;">関わるすべての方々との</span>
+    <span style="display: inline-block;">円滑なコミュニケーションと</span>
+    <span style="display: inline-block;">強固な信頼関係の構築に</span>
+    <span style="display: inline-block;">努めてまいります。</span>
+  </p>
+
+</div>
                           <!-- <h2 class="department-title">Key Responsibilities</h2>
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -938,99 +1161,121 @@
        <div class="values-section" data-aos="fade-up" data-aos-delay="300">
   <div class="row">
     <div class="col-lg-12 text-center">
-      <h3 style="font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">Our Strengths</h3>
+      <h3 style="font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">私たちの強み</h3>
       
-      <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.25rem; word-break: keep-all; line-height: 1.6;">
-        These strengths boost everything we do in our commitment to exceptional services
+      <!-- <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.25rem; word-break: keep-all; line-height: 1.6;">
+       これらの強みは、卓越したサービスを提供するための私たちの取り組みを強力に後押ししています。
+      </p> -->
+      <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.1rem; line-height: 1.6; text-align: center;">
+        <span style="display: inline-block;">これらの強みは、</span>
+        <span style="display: inline-block;">卓越したサービスを提供するための</span>
+        <span style="display: inline-block;">私たちの取り組みを強力に後押ししています。</span>
       </p>
     </div>
   </div>
 </div>
 
-          <div class="row">
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-heart-pulse"></i>
-                </div>
-                <h4>Experienced Management</h4>
-                <p>Providing care with empathy and understanding for every employee's unique needs and circumstances.</p>
-              </div>
-            </div>
+         <div class="row">
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-heart-pulse"></i>
+      </div>
+      <h4><span style="display: inline-block;">経験豊富な経営陣</span></h4>
+      <p>
+        <span style="display: inline-block;">従業員一人ひとりのニーズや</span>
+        <span style="display: inline-block;">状況に寄り添い、</span>
+        <span style="display: inline-block;">共感と理解を持ってサポートを提供します。</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h4>Excellent Staff</h4>
-                <p>Staff with backgrounds in staffing agencies,
-                    10+ years in nursing care and 5+ years in manufacturing.
-                    Capable of on-site guidance and interpretation.</p>
-              </div>
-            </div>
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-people"></i>
+      </div>
+      <h4><span style="display: inline-block;">優れたスタッフ陣</span></h4>
+      <p>
+        <span style="display: inline-block;">人材派遣業界の経験者に加え、</span>
+        <span style="display: inline-block;">介護職10年以上、製造職5年以上の</span>
+        <span style="display: inline-block;">ベテランが在籍。現場指導や</span>
+        <span style="display: inline-block;">通訳にも柔軟に対応可能です。</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-shield-check"></i>
-                </div>
-                <h4>In-house Immigration Specialist</h4>
-                <p>Our In-house Immigration Specialist provides personalized, expert visa support and a seamless relocation experience, ensuring you enjoy a total peace of mind from day one.</p>
-              </div>
-            </div>
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <h4><span style="display: inline-block;">社内専門家による</span><span style="display: inline-block;">ビザサポート</span></h4>
+      <p>
+        <span style="display: inline-block;">社内の入管業務担当者が、</span>
+        <span style="display: inline-block;">専門的なビザ支援と円滑な</span>
+        <span style="display: inline-block;">入国手続きを個別に行い、</span>
+        <span style="display: inline-block;">初日から安心できる環境を整えます。</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-star"></i>
-                </div>
-                <h4>One-Stop Service</h4>
-                <p>One-stop service from visa application to renewal. Eliminates legal risks such as illegal employment.</p>
-              </div>
-            </div>
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-star"></i>
+      </div>
+      <h4><span style="display: inline-block;">ワンストップサービス</span></h4>
+      <p>
+        <span style="display: inline-block;">ビザの申請から更新まで一貫して対応。</span>
+        <span style="display: inline-block;">不法就労などの法的リスクを</span>
+        <span style="display: inline-block;">完全に排除します。</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="value-item">
-                <div class="value-icon">
-                  <!-- <i class="bi bi-activity"></i> -->
-                </div>
-                <!-- <h4>Local Community Network</h4> -->
-                <!-- <p>We help foreign workers become accepted members of the community.</p> -->
-              </div>
-            </div>
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <!-- <i class="bi bi-activity"></i> -->
+      </div>
+      <!-- <h4><span style="display: inline-block;">地域社会とのネットワーク</span></h4>
+      <p>
+        <span style="display: inline-block;">外国人労働者が地域社会の</span>
+        <span style="display: inline-block;">一員として受け入れられるよう、</span>
+        <span style="display: inline-block;">交流と定着を支援します。</span>
+      </p> -->
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <h4>Local Community Network</h4>
-                <p>We help foreign workers become accepted members of the community.</p>
-              </div>
-            </div>
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-activity"></i>
+      </div>
+      <h4><span style="display: inline-block;">地域社会とのネットワーク</span></h4>
+      <p>
+        <span style="display: inline-block;">外国人労働者が地域社会の</span>
+        <span style="display: inline-block;">一員として受け入れられるよう、</span>
+        <span style="display: inline-block;">交流と定着を支援します。</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="bi bi-bandaid"></i>
-                </div>
-                <h4>24 Hours Emergency Support</h4>
-                <p>Immediate response to sudden problems or illness、no additional fees.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="value-item">
-                <div class="value-icon">
-                  <!-- <i class="bi bi-activity"></i> -->
-                </div>
-                <!-- <h4>Local Community Network</h4> -->
-                <!-- <p>We help foreign workers become accepted members of the community.</p> -->
-              </div>
-            </div>
-
-          </div><!-- End Values Row -->
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+    <div class="value-item" style="font-weight: bold;">
+      <div class="value-icon">
+        <i class="bi bi-bandaid"></i>
+      </div>
+      <h4><span style="display: inline-block;">24時間緊急サポート</span></h4>
+      <p>
+        <span style="display: inline-block;">急なトラブルや病気にも即座に対応。</span>
+        <span style="display: inline-block;">追加費用なしで、</span>
+        <span style="display: inline-block;">万全のバックアップ体制を提供します。</span>
+      </p>
+    </div>
+  </div>
+</div><!-- End Values Row -->
         </div><!-- End Values Section -->
 
 
@@ -1044,23 +1289,61 @@
             <div class="certifications-section" data-aos="fade-up" data-aos-delay="400">
   <div class="row">
     <div class="col-lg-12 text-center">
-      <h3 style="font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">Partnership With</h3>
+      <h3 style="font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">提携先</h3>
       
-      <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.25rem; word-break: keep-all; line-height: 1.6;">
+      <!-- <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.25rem; word-break: keep-all; line-height: 1.6;">
         We collaborate with a premier network of Trusted Partners to ensure you are placed with industry-leading employers who prioritize your professional growth, safety, and long-term success.
+      </p> -->
+      <p class="section-description" lang="ja" style="font-weight: bold; font-size: 1.1rem; line-height: 1.8; text-align: center;">
+        <span style="display: inline-block;">私たちは、厳選された信頼できる</span>
+        <span style="display: inline-block;">パートナーネットワークと連携し、</span>
+        <span style="display: inline-block;">皆様のキャリア成長、安全、そして</span>
+        <span style="display: inline-block;">長期的な成功を最優先に考える</span>
+        <span style="display: inline-block;">業界屈指の優良企業への就業を支援します。</span>
       </p>
     </div>
   </div>
 </div>
 
-            </div>
+            <!-- </div>
                 <img src="assets/img/NAKATSU.png" width="600" 
                     style="border: 2px solid white; border-radius: 8px;">
                 <img src="assets/img/partnership-01.png" width="600" 
                     style="border: 2px solid white; border-radius: 8px;">
                 <img src="assets/img/KINUGAWA.jpg" width="600" 
                     style="border: 2px solid white; border-radius: 8px; display: block; margin: 0 auto;">
-            </div>
+            </div> -->
+
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center; margin-bottom: 2rem;">
+  
+  <div class="col-sm-6 col-md-4" style="flex: 1 0 21rem;">
+    <img src="assets/img/NAKATSU.png" alt="Nakatsu Partnership" 
+         style="width: 100%; height: auto; display: block; 
+                border-radius: 1rem; border: none; 
+                box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); 
+                transition: transform 0.3s ease-in-out;"
+         onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0px)';">
+  </div>
+
+  <div class="col-sm-6 col-md-4" style="flex: 1 0 21rem;">
+    <img src="assets/img/partnership-01.png" alt="Partnership Overview" 
+         style="width: 100%; height: auto; display: block; 
+                border-radius: 1rem; border: none; 
+                box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); 
+                transition: transform 0.3s ease-in-out;"
+         onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0px)';">
+  </div>
+
+  <div class="col-sm-6 col-md-4" style="flex: 1 0 21rem;">
+    <img src="assets/img/KINUGAWA.jpg" alt="Kinugawa Partnership" 
+         style="width: 100%; height: auto; display: block; 
+                border-radius: 1rem; border: none; 
+                box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); 
+                transition: transform 0.3s ease-in-out;"
+         onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0px)';">
+  </div>
+
+</div>
             
           </div>
 
@@ -1125,28 +1408,28 @@
           <div class="col-lg-5">
             <div class="brand-section">
               <a href="index.html" class="logo d-flex align-items-center mb-4">
-               <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
+                  <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
-              <p>Registered Support Organization for Specified Skilled Workers</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
 
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>0979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
                 </div>
-                 <div class="contact-item">
+                <div class="contact-item">
                   <i class="bi bi-phone"></i>
-                  <span>FAX:  0979-33-8687</span>
+                  <span translate="no">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
-                  <span>worker_support@naviners.com</span>
+                  <span translate="no">worker_support@naviners.com</span>
                 </div>
               </div>
             </div>
@@ -1158,53 +1441,13 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Office Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
                   </div>
                 </div>
 
-
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
 
               </div>
             </div>
@@ -1232,12 +1475,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                </div>
+                     </div>
               </div>
             </div>
 
@@ -1292,6 +1530,13 @@
   '私たちについて' : '会社案内', // about us
   'M&Hモータース株式会社を' : 'エムアンドエイチモータース有限', // M&H motors ltd
   '特定技能労働者向け登録支援組織' : '特定技能労働者向け登録支援機関', //Registered Support Organization for Specified Skilled Workers
+  'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
 };
 
 const observer = new MutationObserver((mutations) => {
