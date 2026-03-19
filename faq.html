@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FAQ - Navigation Partners Ltd</title>
+  <title translate="no">FAQ - Navigation Partners Ltd</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -66,47 +66,48 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-             <li><a href="index.html">Home</a></li>
-  
-              <li><a href="about.html">About Us</a></li>
-  
-              <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+              <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="#">会社案内</a></li>
+              <!-- Job application -->
+              <li><a href="#">
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#" class="active"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#" class="active"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -121,7 +122,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -129,7 +130,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -176,7 +177,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 class="heading-title">Frequenty Asked Questions</h1>
+              <h1 class="heading-title">よくある質問</h1>
               <!-- <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                 ullamcorper mattis, pulvinar dapibus leo.</p> -->
             </div>
@@ -186,8 +187,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Frequently Asked Questions</li>
+            <li><a href="index.html">ホーム</a></li>
+            <li class="current">よくある質問</li>
           </ol>
         </div>
       </nav>
@@ -205,27 +206,42 @@
 
               <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="150">
                 <div class="faq-header">
-                  <span class="faq-number">01</span>
-                  <h4>QUESTION # 1: What is required to accept a Specified Skilled Worker?</h4>
+                  <span class="faq-number" style="font-weight: bold; color: #1a62d6;">01</span>
+                  <h4>質問1：特定熟練労働者を受け入れるために必要な条件は何ですか？</h4>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
                   </div>
                 </div>
-                <div class="faq-content">
+                <!-- <div class="faq-content">
                   <div class="content-inner">
                     <p>The accepting company must conclude an employment contract, provide appropriate working conditions, and prepare a support plan.
                       By working with a Registered Support Organization, the process becomes smoother and compliant with regulations.
 
                     </p>
                   </div>
+                </div> -->
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.8; word-break: keep-all; color: #333;">
+                      <span style="display:inline-block;">受け入れ企業は、</span>
+                      <span style="display:inline-block;">雇用契約を締結し、</span>
+                      <span style="display:inline-block;">適切な労働条件を提供し、</span>
+                      <span style="display:inline-block;">支援計画を</span><span style="display:inline-block;">作成する必要があります。</span>
+                      <br>
+                      <span style="display:inline-block;">登録支援機関と</span><span style="display:inline-block;">連携することで、</span>
+                      <span style="display:inline-block;">手続きはより</span><span style="display:inline-block;">円滑に進み、</span>
+                      <span style="display:inline-block;">規制にも準拠します。</span>
+                    </p>
+                  </div>
                 </div>
+
               </div><!-- End FAQ Item -->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+              <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="faq-header">
                   <span class="faq-number">02</span>
-                  <h4>QUESTION # 2: How long does the hiring process take?</h4>
+                  <h4>質問2：採用プロセスにはどのくらい時間がかかりますか？</h4>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -239,9 +255,49 @@
                         </p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div> -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif;">
+  
+                <div class="faq-header" style="display: flex; align-items: center; cursor: pointer; padding: 15px 0; border-bottom: 1px solid #eee;">
+                  <span class="faq-number" style="margin-right: 15px; font-weight: bold; color: #1a62d6;">02</span>
+                  <h4 style="margin: 0; flex-grow: 1; font-size: 1.1rem; line-height: 1.5; word-break: keep-all;">
+                    <span style="display:inline-block;">質問2：</span><span style="display:inline-block;">採用プロセスには</span><span style="display:inline-block;">どのくらい</span><span style="display:inline-block;">時間がかかりますか？</span>
+                  </h4>
+                  <div class="faq-toggle" style="margin-left: 10px;">
+                    <i class="bi bi-plus"></i>
+                    </div>
+                </div>
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="faq-content" style="padding: 15px 0;">
+                  <div class="content-inner" style="line-height: 1.8; color: #444;">
+                    
+                    <div style="display: flex; margin-bottom: 8px;">
+                      <span style="margin-right: 10px;">•</span>
+                      <p style="margin: 0; word-break: keep-all;">
+                        <span style="display:inline-block; font-weight: bold;">国内候補者：</span><span style="display:inline-block;">約1～2ヶ月</span>
+                      </p>
+                    </div>
+
+                    <div style="display: flex; margin-bottom: 15px;">
+                      <span style="margin-right: 10px;">•</span>
+                      <p style="margin: 0; word-break: keep-all;">
+                        <span style="display:inline-block; font-weight: bold;">海外候補者：</span><span style="display:inline-block;">約3～6ヶ月</span>
+                      </p>
+                    </div>
+
+                    <p style="margin: 0; font-size: 0.95rem; word-break: keep-all;">
+                      <span style="display:inline-block;">期間は国、</span>
+                      <span style="display:inline-block;">業界、</span>
+                      <span style="display:inline-block;">書類によって</span>
+                      <span style="display:inline-block;">異なります。</span>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <!-- End FAQ Item -->
+
+              <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
                 <div class="faq-header">
                   <span class="faq-number">03</span>
                   <h4>QUESTION # 3: What level of Japanese language ability is required?</h4>
@@ -257,9 +313,36 @@
                     </p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div> -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="250" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif;">
+  
+                <div class="faq-header" style="display: flex; align-items: center; cursor: pointer; padding: 15px 0; border-bottom: 1px solid #eee;">
+                  <span class="faq-number" style="margin-right: 15px; font-weight: bold; color: #1a62d6;">03</span>
+                  <h4 style="margin: 0; flex-grow: 1; font-size: 1.1rem; line-height: 1.5; word-break: keep-all;">
+                    <span style="display:inline-block;">質問3：</span><span style="display:inline-block;">どの程度の</span><span style="display:inline-block;">日本語能力が</span><span style="display:inline-block;">必要ですか？</span>
+                  </h4>
+                  <div class="faq-toggle" style="margin-left: 10px;">
+                    <i class="bi bi-plus"></i>
+                  </div>
+                </div>
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-content" style="padding: 15px 0;">
+                  <div class="content-inner" style="line-height: 1.8; color: #444;">
+                    <p style="margin: 0; word-break: keep-all;">
+                      <span style="display:inline-block;">原則として、</span>
+                      <span style="display:inline-block;">日本語能力試験（JLPT）</span><span style="display:inline-block;">N4レベル、</span>
+                      <span style="display:inline-block;">またはそれと同等の</span><span style="display:inline-block;">日本語能力が</span><span style="display:inline-block;">必要です。</span>
+                      <br><br>
+                      <span style="display:inline-block;">業界によっては、</span>
+                      <span style="display:inline-block;">より高い習熟度が</span>
+                      <span style="display:inline-block;">求められる場合があります。</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End FAQ Item -->
+
+              <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="faq-header">
                   <span class="faq-number">04</span>
                   <h4>QUESTION # 4: What services does a Registered Support Organization provide?</h4>
@@ -269,22 +352,80 @@
                   </div>
                 </div>
                 <div class="faq-content">
-  <div class="content-inner">
-    <p><strong>We provide:</strong></p>
-    <ul class="services-list">
-      <li>Pre-arrival orientation</li>
-      <li>Airport pick-up</li>
-      <li>Housing setup</li>
-      <li>Administrative procedures</li>
-      <li>Regular interviews</li>
-      <li>Japanese language support</li>
-      <li>Emergency assistance</li>
-    </ul>
-  </div>
-</div>
-              </div><!-- End FAQ Item -->
+                  <div class="content-inner">
+                    <p><strong>We provide:</strong></p>
+                    <ul class="services-list">
+                      <li>Pre-arrival orientation</li>
+                      <li>Airport pick-up</li>
+                      <li>Housing setup</li>
+                      <li>Administrative procedures</li>
+                      <li>Regular interviews</li>
+                      <li>Japanese language support</li>
+                      <li>Emergency assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif;">
+  
+                <div class="faq-header" style="display: flex; align-items: center; cursor: pointer; padding: 15px 0; border-bottom: 1px solid #eee;">
+                  <span class="faq-number" style="margin-right: 15px; font-weight: bold; color: #1a62d6;">04</span>
+                  <h4 style="margin: 0; flex-grow: 1; font-size: 1.1rem; line-height: 1.5; word-break: keep-all;">
+                    <span style="display:inline-block;">質問4：</span><span style="display:inline-block;">登録支援機関は</span><span style="display:inline-block;">どのようなサービスを</span><span style="display:inline-block;">提供しますか？</span>
+                  </h4>
+                  <div class="faq-toggle" style="margin-left: 10px;">
+                    <i class="bi bi-plus"></i>
+                  </div>
+                </div>
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="faq-content" style="padding: 15px 0;">
+                  <div class="content-inner" style="line-height: 1.8; color: #444;">
+                    <p style="margin-bottom: 10px; font-weight: bold; word-break: keep-all;">主な支援内容：</p>
+                    
+                    <div class="services-list" style="list-style: none; padding: 0;">
+                      
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">事前ガイダンス（入国前説明）</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">出入国時の送迎（空港送迎）</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">住居確保の支援（社宅・アパート契約）</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">公的手続きの同行・支援</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">定期的な面談の実施</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">日本語学習の支援</span>
+                      </div>
+
+                      <div style="display: flex; margin-bottom: 6px;">
+                        <span style="margin-right: 10px; color: #1a62d6;">•</span>
+                        <span style="word-break: keep-all;">相談・苦情への対応（緊急支援）</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End FAQ Item -->
+
+              <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
                 <div class="faq-header">
                   <span class="faq-number">05</span>
                   <h4>QUESTION # 5: How much does the service cost?</h4>
@@ -300,7 +441,33 @@
                     </p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div> -->
+               <div class="faq-item" data-aos="fade-up" data-aos-delay="350" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif;">
+  
+                  <div class="faq-header" style="display: flex; align-items: center; cursor: pointer; padding: 15px 0; border-bottom: 1px solid #eee;">
+                    <span class="faq-number" style="margin-right: 15px; font-weight: bold; color: #1a62d6;">05</span>
+                    <h4 style="margin: 0; flex-grow: 1; font-size: 1.1rem; line-height: 1.5; word-break: keep-all;">
+                      <span style="display:inline-block;">質問5：</span><span style="display:inline-block;">サービスの</span><span style="display:inline-block;">費用はどのくらい</span><span style="display:inline-block;">かかりますか？</span>
+                    </h4>
+                    <div class="faq-toggle" style="margin-left: 10px;">
+                      <i class="bi bi-plus"></i>
+                    </div>
+                  </div>
+
+                  <div class="faq-content" style="padding: 15px 0;">
+                    <div class="content-inner" style="line-height: 1.8; color: #444;">
+                      <p style="margin: 0; word-break: keep-all;">
+                        <span style="display:inline-block;">費用は、</span><span style="display:inline-block;">業界、</span><span style="display:inline-block;">支援する人数、</span>
+                        <span style="display:inline-block;">および支援レベルによって</span><span style="display:inline-block;">異なります。</span>
+                        <br><br>
+                        <span style="display:inline-block;">まずは<strong>無料相談</strong>にて</span><span style="display:inline-block;">詳細を伺い、</span>
+                        <span style="display:inline-block;">お客様に合わせた</span><span style="display:inline-block;">最適な<strong>御見積書</strong>を</span>
+                        <span style="display:inline-block;">ご提示させていただきます。</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              <!-- End FAQ Item -->
 
             </div>
 
@@ -325,26 +492,26 @@
               <a href="index.html" class="logo d-flex align-items-center mb-4">
               <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
-              <p>Registered Support Organization for Specified Skilled Workers</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
 
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>0979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-phone"></i>
+                  <span translate="no">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
-                  <span>FAX: 0979-33-8687</span>
-                </div>
-                <div class="contact-item">
-                  <i class="bi bi-envelope"></i>
-                  <span>worker_support@naviners.com</span>
+                  <span translate="no">worker_support@naviners.com</span>
                 </div>
               </div>
             </div>
@@ -356,53 +523,12 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Map Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
                   </div>
                 </div>
-
-
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
 
               </div>
             </div>
@@ -430,11 +556,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+               
                 </div>
               </div>
             </div>
@@ -481,6 +603,14 @@
   '家':'ホ-ム', // home
   '会社概要' : '会社案内', // About Us
   '特定技能労働者向け登録支援組織' : '特定技能労働者向け登録支援機関', //Registered Support Organization for Specified Skilled Workers
+  'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
+  'FAQ' : 'Frequently Asked Questions', //fix for FAQ
 };
 
 const observer = new MutationObserver((mutations) => {

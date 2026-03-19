@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gallery - Navigation Partners Ltd</title>
+  <title translate="no">Gallery - Navigation Partners Ltd</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -61,52 +61,53 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/img/navpart-logo-2.jpg" alt="">
-          <h4 class="sitename">NAVIGATION PARTNERS LTD</h4>
+          <h4 class="sitename" translate="no">NAVIGATION PARTNERS LTD</h4>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-  
-              <li><a href="about.html">About Us</a></li>
-  
-              <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+            <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="#">会社案内</a></li>
+              <!-- Job application -->
+              <li><a href="#">
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#" class="active"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#" class="active"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -121,7 +122,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -129,7 +130,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -175,7 +176,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 class="heading-title">Gallery</h1>
+              <h1 class="heading-title">ギャラリー</h1>
               <!-- <p class="mb-0">
                 Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
                 odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
@@ -189,8 +190,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Gallery</li>
+            <li><a href="index.html">ホーム</a></li>
+            <li class="current">ギャラリー</li>
           </ol>
         </div>
       </nav>
@@ -312,22 +313,22 @@
               <a href="index.html" class="logo d-flex align-items-center mb-4">
                <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
-              <p>Registered Support Organization for Specified Skilled Workers</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
 
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>+81-979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
                 </div>
                 <div class="contact-item">
-                  <i class="bi bi-telephone"></i>
-                  <span>FAX: 0979-33-8687</span>
+                  <i class="bi bi-phone"></i>
+                  <span translate="">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
@@ -343,53 +344,12 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Map Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
                   </div>
                 </div>
-
-
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
 
               </div>
             </div>
@@ -417,11 +377,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                
                 </div>
               </div>
             </div>
@@ -468,6 +424,13 @@
   '家':'ホ-ム', // home
   '特定技能労働者向け登録支援組織' : '特定技能労働者向け登録支援機関', //Registered Support Organization for Specified Skilled Workers
   '会社概要' : '会社案内', // About Us
+  'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
 };
 
 const observer = new MutationObserver((mutations) => {

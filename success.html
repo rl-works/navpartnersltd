@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SUCCESS - EMAIL SENT</title>
+  <title translate="no">SUCCESS - EMAIL SENT</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -67,47 +67,48 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-  
-              <li><a href="about.html">About Us</a></li>
-  
-              <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+              <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="#">会社案内</a></li>
+              <!-- Job application -->
+              <li><a href="#">
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#" class="active"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -122,7 +123,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -130,7 +131,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -182,16 +183,32 @@
                 
               </div>
 
-              <h1 data-aos="fade-right" data-aos-delay="300">
-                <br>
-                <span class="highlight">SUCCESS! Email Sent.</span> 
+             <h1 data-aos="fade-right" data-aos-delay="300" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.4; margin-top: 20px;">
+                <span class="highlight" style="color: #1a62d6; word-break: keep-all;">
+                  <span style="display:inline-block;">送信成功！</span>
+                  <span style="display:inline-block;">メール送信完了。</span>
+                </span>
               </h1>
 
-              <p class="hero-description" data-aos="fade-right" data-aos-delay="400">
+              <!-- <p class="hero-description" data-aos="fade-right" data-aos-delay="400">
                 <h2>We will review and contact you as soon as possible.</h2>
                 <br>
                 <h5>While waiting, why not try to scan our Services and available Job Applications?</h5>
-              </p>
+              </p> -->
+              <div class="hero-description" data-aos="fade-right" data-aos-delay="400" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.6;">
+  
+                <h2 style="font-weight: bold; color: #333; margin-bottom: 20px; word-break: keep-all; font-size: 1.5rem;">
+                  <span style="display:inline-block;">内容を確認の上、</span><br>
+                  <span style="display:inline-block;">担当者より</span><span style="display:inline-block;">折り返し</span><span style="display:inline-block;">ご連絡いたします。</span>
+                </h2>
+
+                <h5 style="font-weight: normal; color: #666; line-height: 1.8; word-break: keep-all; font-size: 1.1rem;">
+                  <span style="display:inline-block;">お待ちいただいている間に、</span><br>
+                  <span style="display:inline-block;">当社のサービスや</span><span style="display:inline-block;">最新の求人情報を</span><span style="display:inline-block;">ぜひご覧ください。</span>
+                </h5>
+                
+              </div>
+              
              
             </div>
           </div>
@@ -231,27 +248,28 @@
           <div class="col-lg-5">
             <div class="brand-section">
               <a href="index.html" class="logo d-flex align-items-center mb-4">
-                <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
+              <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Crafting exceptional digital experiences through thoughtful design and
-                innovative solutions that elevate your brand presence.</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
+
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II 401, 8-10 Toyodamachi, Nakatsu City, Oita, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>0979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-phone"></i>
+                  <span translate="no">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
-                  <span>FAX: 0979-33-8687</span>
-                </div>
-                <div class="contact-item">
-                  <i class="bi bi-envelope"></i>
-                  <span>worker_support@naviners.com</span>
+                  <span translate="no">worker_support@naviners.com</span>
                 </div>
               </div>
             </div>
@@ -263,53 +281,12 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Map Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
                   </div>
                 </div>
-
-
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
 
               </div>
             </div>
@@ -337,12 +314,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                </div>
+                     </div>
               </div>
             </div>
 
@@ -384,8 +356,14 @@
   '農学者': '農業家', // Agriculturist
   '食品サービス' : '飲食業', // Food Service
   '外食産業' : '飲食業', //Food Service
-  '細川治照': '細川慈照さん', //hosokawa jisho
-  '家':'ホ-ム' // home
+  '家':'ホ-ム', // home
+  'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
 };
 
 const observer = new MutationObserver((mutations) => {

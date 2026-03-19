@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Privacy - Navigation Partners Ltd</title>
+  <title translate="no">Privacy - Navigation Partners Ltd</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -66,47 +66,48 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-  
-              <li><a href="about.html">About Us</a></li>
-  
-              <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+           <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="#">会社案内</a></li>
+              <!-- Job application -->
+              <li><a href="#">
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#" class="active"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#" class="active"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -121,7 +122,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -129,7 +130,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -175,13 +176,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 class="heading-title">Privacy</h1>
-              <!-- <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
-                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
-                ipsum dolorem.
-              </p> -->
+              <h1 class="heading-title">プライバシー</h1>
             </div>
           </div>
         </div>
@@ -189,155 +184,151 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Privacy</li>
+            <li><a href="index.html">ホーム</a></li>
+            <li class="current">プライバシー</li>
           </ol>
         </div>
     
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Privacy Section -->
-    <section id="privacy" class="privacy section">
+   <section id="privacy" class="privacy section" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.8; color: #333;">
 
-      <div class="container" data-aos="fade-up">
-        <!-- Header -->
-        <div class="privacy-header" data-aos="fade-up">
-          <div class="header-content">
-            <div class="last-updated">Effective Date: February 27, 2025</div>
-            <h1>Privacy Policy</h1>
-            <p class="intro-text">This Privacy Policy describes how we collect, use, process, and disclose your
-              information, including personal information, in conjunction with your access to and use of our services.
-            </p>
+  <div class="container" data-aos="fade-up">
+    <div class="privacy-header" data-aos="fade-up" style="margin-bottom: 40px; border-bottom: 2px solid #eee; padding-bottom: 20px;">
+      <div class="header-content">
+        <div class="last-updated" style="color: #666; font-size: 0.9rem; margin-bottom: 10px;">最終更新日：2025年2月27日</div>
+        <h1 style="font-weight: bold; font-size: 2.2rem; color: #1a62d6;">
+          <span style="display:inline-block;">プライバシー</span><span style="display:inline-block;"> ポリシー</span>
+        </h1>
+        <p class="intro-text" style="word-break: keep-all; max-width: 800px;">
+          本プライバシーポリシーは、お客様が当社のサービスにアクセスし利用する際に、当社がどのようにお客様の情報（個人情報を含む）を収集、使用、処理、および開示するかについて説明するものです。
+        </p>
+      </div>
+    </div>
 
-            <!--Translator-->
-           
-              <div id="google_translate_element"></div>
-            
-
-
-          </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="privacy-content" data-aos="fade-up">
-          <!-- Introduction -->
-          <div class="content-section">
-            <h2>1. Introduction</h2>
-            <p>When you use our services, you're trusting us with your information. We understand this is a big
-              responsibility and work hard to protect your information and put you in control.</p>
-            <p>This Privacy Policy is meant to help you understand what information we collect, why we collect it, and
-              how you can update, manage, export, and delete your information.</p>
-          </div>
-
-          <!-- Information Collection -->
-          <div class="content-section">
-            <h2>2. Information We Collect</h2>
-            <p>We collect information to provide better services to our users. The types of information we collect
-              include:</p>
-
-            <h3>2.1 Information You Provide</h3>
-            <p>When you create an account or use our services, you provide us with personal information that includes:
-            </p>
-            <ul>
-              <li>Your name and contact information</li>
-              <li>Account credentials</li>
-              <li>Payment information when required</li>
-              <li>Communication preferences</li>
-            </ul>
-
-            <h3>2.2 Automatic Information</h3>
-            <p>We automatically collect and store certain information when you use our services:</p>
-            <ul>
-              <li>Device information and identifiers</li>
-              <li>Log information and usage statistics</li>
-              <li>Location information when enabled</li>
-              <li>Browser type and settings</li>
-            </ul>
-          </div>
-
-          <!-- Use of Information -->
-          <div class="content-section">
-            <h2>3. How We Use Your Information</h2>
-            <p>We use the information we collect to provide, maintain, and improve our services. Specifically, we use
-              your information to:</p>
-            <ul>
-              <li>Provide and personalize our services</li>
-              <li>Process transactions and send related information</li>
-              <li>Send notifications and updates about our services</li>
-              <li>Maintain security and verify identity</li>
-              <li>Analyze and improve our services</li>
-            </ul>
-          </div>
-
-          <!-- Information Sharing -->
-          <div class="content-section">
-            <h2>4. Information Sharing and Disclosure</h2>
-            <p>We do not share personal information with companies, organizations, or individuals outside of our company
-              except in the following cases:</p>
-
-            <h3>4.1 With Your Consent</h3>
-            <p>We will share personal information with companies, organizations, or individuals outside of our company
-              when we have your consent to do so.</p>
-
-            <h3>4.2 For Legal Reasons</h3>
-            <p>We will share personal information if we have a good-faith belief that access, use, preservation, or
-              disclosure of the information is reasonably necessary to:</p>
-            <ul>
-              <li>Meet any applicable law, regulation, legal process, or enforceable governmental request</li>
-              <li>Enforce applicable Terms of Service</li>
-              <li>Detect, prevent, or otherwise address fraud, security, or technical issues</li>
-              <li>Protect against harm to the rights, property, or safety of our users</li>
-            </ul>
-          </div>
-
-          <!-- Data Security -->
-          <div class="content-section">
-            <h2>5. Data Security</h2>
-            <p>We work hard to protect our users from unauthorized access to or unauthorized alteration, disclosure, or
-              destruction of information we hold. In particular:</p>
-            <ul>
-              <li>We encrypt our services using SSL</li>
-              <li>We review our information collection, storage, and processing practices</li>
-              <li>We restrict access to personal information to employees who need that information</li>
-            </ul>
-          </div>
-
-          <!-- Your Rights -->
-          <div class="content-section">
-            <h2>6. Your Rights and Choices</h2>
-            <p>You have certain rights regarding your personal information, including:</p>
-            <ul>
-              <li>The right to access your personal information</li>
-              <li>The right to correct inaccurate information</li>
-              <li>The right to request deletion of your information</li>
-              <li>The right to restrict or object to our processing of your information</li>
-            </ul>
-          </div>
-
-          <!-- Policy Updates -->
-          <div class="content-section">
-            <h2>7. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
-              Privacy Policy on this page and updating the effective date at the top.</p>
-            <p>Your continued use of our services after any changes to this Privacy Policy constitutes your acceptance
-              of such changes.</p>
-          </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="privacy-contact" data-aos="fade-up">
-          <h2>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy or our practices, please contact us:</p>
-          <div class="contact-details">
-            <p><strong>Email:</strong> worker_support@naviners.com</p>
-            <p><strong>Address:</strong> ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</p>
-          </div>
-        </div>
-
+    <div class="privacy-content" data-aos="fade-up">
+      
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">1. はじめに</span>
+        </h2>
+        <p style="word-break: keep-all;">お客様が当社のサービスを利用する際、お客様はご自身の情報を当社に託していることになります。当社はこの責任の重さを理解し、お客様の情報を保護し、お客様自身が情報を管理できるように努めています。</p>
+        <p style="word-break: keep-all;">本ポリシーは、当社がどのような情報を、なぜ収集するのか、またお客様がどのように情報の更新、管理、削除を行えるかを理解していただくためのものです。</p>
       </div>
 
-    </section><!-- /Privacy Section -->
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">2. 収集する情報</span>
+        </h2>
+        <p style="word-break: keep-all;">当社は、すべてのユーザーにより良いサービスを提供するために情報を収集します。収集する情報の種類は以下の通りです：</p>
+
+        <h3 style="font-size: 1.2rem; margin: 20px 0 10px;">
+          <span style="display:inline-block;">2.1 お客様から</span><span style="display:inline-block;">提供される情報</span>
+        </h3>
+        <p style="word-break: keep-all;">アカウント作成時やサービス利用時に提供される個人情報には以下が含まれます：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">氏名および連絡先情報</li>
+          <li style="word-break: keep-all;">ログイン認証情報</li>
+          <li style="word-break: keep-all;">お支払い情報（必要な場合）</li>
+          <li style="word-break: keep-all;">通信設定（メール配信設定など）</li>
+        </ul>
+
+        <h3 style="font-size: 1.2rem; margin: 20px 0 10px;">
+          <span style="display:inline-block;">2.2 自動的に</span><span style="display:inline-block;">収集される情報</span>
+        </h3>
+        <p style="word-break: keep-all;">サービス利用時に自動的に収集・保存される情報には以下が含まれます：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">デバイス情報および識別子</li>
+          <li style="word-break: keep-all;">ログ情報および利用統計</li>
+          <li style="word-break: keep-all;">位置情報（設定で有効な場合）</li>
+          <li style="word-break: keep-all;">ブラウザの種類および設定</li>
+        </ul>
+      </div>
+
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">3. 情報の利用目的</span>
+        </h2>
+        <p style="word-break: keep-all;">当社は、収集した情報をサービスの提供、維持、および改善のために利用します。具体的には以下の目的で利用します：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">サービスの提供およびパーソナライズ</li>
+          <li style="word-break: keep-all;">取引の処理および関連情報の送付</li>
+          <li style="word-break: keep-all;">サービスに関する通知やアップデートの送付</li>
+          <li style="word-break: keep-all;">セキュリティの維持および本人確認</li>
+          <li style="word-break: keep-all;">サービスの分析および改善</li>
+        </ul>
+      </div>
+
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">4. 情報の共有と開示</span>
+        </h2>
+        <p style="word-break: keep-all;">当社は、以下の場合を除き、個人情報を社外の企業、組織、個人と共有することはありません：</p>
+
+        <h3 style="font-size: 1.2rem; margin: 20px 0 10px;">
+          <span style="display:inline-block;">4.1 お客様の同意が</span><span style="display:inline-block;">ある場合</span>
+        </h3>
+        <p style="word-break: keep-all;">お客様の同意を得た場合に限り、個人情報を社外と共有します。</p>
+
+        <h3 style="font-size: 1.2rem; margin: 20px 0 10px;">
+          <span style="display:inline-block;">4.2 法的理由による場合</span>
+        </h3>
+        <p style="word-break: keep-all;">情報のアクセス、利用、保存、または開示が以下の理由で合理的に必要であると誠実に判断した場合、情報を共有します：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">適用される法令、規制、法的手続き、または強制力のある行政機関の要請に応じるため</li>
+          <li style="word-break: keep-all;">利用規約の遵守状況を調査するため</li>
+          <li style="word-break: keep-all;">不正行為、セキュリティ、または技術的な問題の検出、防止、対処のため</li>
+          <li style="word-break: keep-all;">当社、ユーザー、または公衆の権利、財産、安全を損害から保護するため</li>
+        </ul>
+      </div>
+
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">5. データのセキュリティ</span>
+        </h2>
+        <p style="word-break: keep-all;">当社は、情報の不正アクセス、改ざん、開示、または破壊からユーザーを保護するために最善を尽くしています。具体的には：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">SSL（暗号化通信）を使用してサービスを保護しています</li>
+          <li style="word-break: keep-all;">情報の収集、保存、処理方法を定期的に見直しています</li>
+          <li style="word-break: keep-all;">個人情報へのアクセスを、業務上必要最低限の従業員に限定しています</li>
+        </ul>
+      </div>
+
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">6. お客様の権利と選択</span>
+        </h2>
+        <p style="word-break: keep-all;">お客様は自身の個人情報に関して、以下の権利を有します：</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li style="word-break: keep-all;">自身の個人情報へのアクセス権</li>
+          <li style="word-break: keep-all;">不正確な情報の修正を求める権利</li>
+          <li style="word-break: keep-all;">情報の削除を求める権利</li>
+          <li style="word-break: keep-all;">処理の制限または異議申し立てを行う権利</li>
+        </ul>
+      </div>
+
+      <div class="content-section" style="margin-bottom: 35px;">
+        <h2 style="font-size: 1.5rem; border-left: 5px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+          <span style="display:inline-block;">7. 本ポリシーの変更</span>
+        </h2>
+        <p style="word-break: keep-all;">当社は本ポリシーを随時更新することがあります。変更の際は、このページに新しいポリシーを掲載し、冒頭の発効日を更新することで通知いたします。</p>
+        <p style="word-break: keep-all;">ポリシー変更後も引き続きサービスを利用される場合は、変更後の内容に同意したものとみなされます。</p>
+      </div>
+    </div>
+
+    <div class="privacy-contact" data-aos="fade-up" style="background: #f8f9fa; padding: 30px; border-radius: 12px; margin-top: 50px;">
+      <h2 style="margin-top: 0; font-size: 1.5rem;">お問い合わせ</h2>
+      <p style="word-break: keep-all;">本プライバシーポリシーまたは当社の取り組みに関するご質問は、下記までお問い合わせください：</p>
+      <div class="contact-details" style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+        <p style="margin: 0 0 10px;"><strong>メール：</strong> worker_support@naviners.com</p>
+        <p style="margin: 0;"><strong>住所：</strong> 〒871-0058 大分県中津市豊田町8-10 アイエヌジービルII 401号室</p>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Privacy Section -->
 
   </main>
 
@@ -351,24 +342,24 @@
           <div class="col-lg-5">
             <div class="brand-section">
               <a href="index.html" class="logo d-flex align-items-center mb-4">
-              <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
+                <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
-              <p>Registered Support Organization for Specified Skilled Workers</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
 
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>0979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
                 </div>
                 <div class="contact-item">
-                  <i class="bi bi-envelope"></i>
-                  <span>FAX: 0979-33-8687</span>
+                  <i class="bi bi-phone"></i>
+                  <span translate="">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
@@ -384,53 +375,12 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Map Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
                   </div>
                 </div>
-
-
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
 
               </div>
             </div>
@@ -458,12 +408,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                </div>
+              </div>
               </div>
             </div>
 
@@ -514,6 +459,15 @@
   '家':'ホ-ム', // home
   '会社概要' : '会社案内', // About Us
   '特定技能労働者向け登録支援組織' : '特定技能労働者向け登録支援機関', //Registered Support Organization for Specified Skilled Workers
+  'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
+  'Privacypolicy' : 'Privacy Policy', // fix for the spacing
+
 };
 
 const observer = new MutationObserver((mutations) => {

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Terms - Navigation Partners Ltd</title>
+  <title translate="no">Terms - Navigation Partners Ltd</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -70,47 +70,48 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-  
-              <li><a href="about.html">About Us</a></li>
-  
-              <li><a href="departments.html">
-                    <span style="display:none;">Employment Registration</span>Job Application
+             <!-- Home -->
+            <li><a href="index.html" >ホーム</a></li>
+              <!-- About Us -->
+              <li><a href="#">会社案内</a></li>
+              <!-- Job application -->
+              <li><a href="#">
+                    <span style="display:none;">Employment Registration</span>求人応募
                   </a></li>
-  
-              <li><a href="services.html">Services</a></li>
-  
-              <li class="dropdown"><a href="#" class="active"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <!-- Services -->
+              <li><a href="#">サービス</a></li>
+                  <!-- More Pages -->
+              <li class="dropdown"><a href="#" class="active"><span>その他のページ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="appointment.html">
-                    <span style="display:none;">Schedule a Consultation</span>Appointment
+                    <span style="display:none;">Schedule a Consultation</span>予約
                   </a></li>
       
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="faq.html">よくあるご質問</a></li>
       
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.html">ギャラリー</a></li>
       
               <li><a href="terms.html">
-                    <span style="display:none;">Terms and Conditions</span>Terms
+                    <span style="display:none;">Terms and Conditions</span>利用規約
                   </a></li>
       
               <li><a href="privacy.html">
-                    <span style="display:none;">Data Privacy Policy</span>Privacy
+                    <span style="display:none;">Data Privacy Policy</span>プライバシー
                   </a></li>
               </ul>
               </li>
-  
-              <li><a href="contact.html">Contact Us</a></li>
+              <!--Contact Us-->
+              <li><a href="contact.html">お問い合わせ</a></li>
           <!-- </ul>
              <li> -->
               <!--Language Translator-->
          <div class="gtranslate_wrapper"></div>
 <script>
   window.gtranslateSettings = {
-    "default_language": "en",
+    "default_language": "ja",
     "native_language_names": true,
     "detect_browser_language": false, 
-    "languages": ["en", "ja", "my", "vi", "id"],
+    "languages": ["ja", "en", "my", "vi", "id"],
     "wrapper_selector": ".gtranslate_wrapper",
     "select_language_label": "Select Language"
   }
@@ -125,7 +126,7 @@
     function applySavedLanguage() {
         const savedLang = localStorage.getItem(STORAGE_KEY);
         // Ensure we don't loop if already in English
-        if (!savedLang || savedLang === 'en') return;
+        if (!savedLang || savedLang === 'ja') return;
 
         const select = document.querySelector('.gt_selector');
         
@@ -133,7 +134,7 @@
             if (select.value !== savedLang) {
                 // Professional approach: change the value and trigger the global function
                 select.value = savedLang;
-                doGTranslate('en|' + savedLang);
+                doGTranslate('ja|' + savedLang);
                 console.log("Context updated to: " + savedLang);
             }
         }
@@ -179,7 +180,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 class="heading-title">Terms</h1>
+              <h1 class="heading-title">利用規約</h1>
               <!-- <p class="mb-0">
                 Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
                 odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
@@ -193,8 +194,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Terms</li>
+            <li><a href="index.html">ホーム</a></li>
+            <li class="current">利用規約</li>
           </ol>
         </div>
       </nav>
@@ -206,150 +207,141 @@
       <div class="container" data-aos="fade-up">
         <!-- Page Header -->
         <div class="tos-header text-center" data-aos="fade-up">
-          <span class="last-updated">Last Updated: February 27, 2025</span>
-          <h2>Terms of Service</h2>
-          <p>Please read these terms of service carefully before using our services</p>
+          <span class="last-updated">最終更新日：2025年2月27日</span>
+          <h2>利用規約</h2>
+          <p>当社のサービスをご利用になる前に、これらの利用規約をよくお読みください</p>
         </div>
 
-        <!-- Content -->
-        <div class="tos-content" data-aos="fade-up" data-aos-delay="200">
-          <!-- Agreement Section -->
-          <div id="agreement" class="content-section">
-            <h3>1. Agreement to Terms</h3>
-            <p>By accessing our website and services, you agree to be bound by these Terms of Service and all applicable
-              laws and regulations. If you do not agree with any of these terms, you are prohibited from using or
-              accessing our services.</p>
-            <div class="info-box">
-              <i class="bi bi-info-circle"></i>
-              <p>These terms apply to all users, visitors, and others who access or use our services.</p>
-            </div>
-          </div>
+      <div class="tos-content" data-aos="fade-up" data-aos-delay="200" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Meiryo', sans-serif; line-height: 1.8; color: #333;">
+  
+  <div id="agreement" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">1. 利用規約への同意</span>
+    </h3>
+    <p style="word-break: keep-all;">
+      当ウェブサイトおよびサービスにアクセスすることで、お客様は本利用規約ならびに適用されるすべての法律および規制に拘束されることに同意したものとみなされます。これらの条項のいずれかに同意いただけない場合、本サービスの利用またはアクセスを禁止します。
+    </p>
+    <div class="info-box" style="background: #f8f9fa; padding: 15px; border-radius: 8px; display: flex; align-items: flex-start; gap: 10px; margin-top: 10px;">
+      <i class="bi bi-info-circle" style="color: #1a62d6;"></i>
+      <p style="margin: 0; font-size: 0.9rem; word-break: keep-all;">本規約は、当サービスにアクセスまたは利用するすべての利用者、訪問者、およびその他の者に適用されます。</p>
+    </div>
+  </div>
 
-          <!-- Intellectual Property -->
-          <div id="intellectual-property" class="content-section">
-            <h3>2. Intellectual Property Rights</h3>
-            <p>Our service and its original content, features, and functionality are owned by us and are protected by
-              international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
-            <ul class="list-items">
-              <li>All content is our exclusive property</li>
-              <li>You may not copy or modify the content</li>
-              <li>Our trademarks may not be used without permission</li>
-              <li>Content is for personal, non-commercial use only</li>
-            </ul>
-          </div>
+  <div id="intellectual-property" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">2. 知的財産権</span>
+    </h3>
+    <p style="word-break: keep-all;">
+      当サービスおよびその独自のコンテンツ、機能、および仕組みは当社が所有しており、国際的な著作権、商標、特許、営業秘密、およびその他の知的財産法によって保護されています。
+    </p>
+    <ul class="list-items" style="list-style-type: none; padding-left: 0;">
+      <li style="display: flex; gap: 10px; margin-bottom: 5px;"><span>•</span> <span style="word-break: keep-all;">すべてのコンテンツは当社の独占的財産です</span></li>
+      <li style="display: flex; gap: 10px; margin-bottom: 5px;"><span>•</span> <span style="word-break: keep-all;">コンテンツの複製または改変を禁じます</span></li>
+      <li style="display: flex; gap: 10px; margin-bottom: 5px;"><span>•</span> <span style="word-break: keep-all;">当社の商標を無断で使用することはできません</span></li>
+      <li style="display: flex; gap: 10px; margin-bottom: 5px;"><span>•</span> <span style="word-break: keep-all;">コンテンツは個人利用かつ非営利目的に限られます</span></li>
+    </ul>
+  </div>
 
-          <!-- User Accounts -->
-          <div id="user-accounts" class="content-section">
-            <h3>3. User Accounts</h3>
-            <p>When you create an account with us, you must provide accurate, complete, and current information. Failure
-              to do so constitutes a breach of the Terms, which may result in immediate termination of your account.</p>
-            <div class="alert-box">
-              <i class="bi bi-exclamation-triangle"></i>
-              <div class="alert-content">
-                <h5>Important Notice</h5>
-                <p>You are responsible for safeguarding the password and for all activities that occur under your
-                  account.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Prohibited Activities -->
-          <div id="prohibited" class="content-section">
-            <h3>4. Prohibited Activities</h3>
-            <p>You may not access or use the Service for any purpose other than that for which we make it available.</p>
-            <div class="prohibited-list">
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Systematic retrieval of data or content</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Publishing malicious content</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Engaging in unauthorized framing</span>
-              </div>
-              <div class="prohibited-item">
-                <i class="bi bi-x-circle"></i>
-                <span>Attempting to gain unauthorized access</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Disclaimers -->
-          <div id="disclaimer" class="content-section">
-            <h3>5. Disclaimers</h3>
-            <p>Your use of our service is at your sole risk. The service is provided "AS IS" and "AS AVAILABLE" without
-              warranties of any kind, whether express or implied.</p>
-            <div class="disclaimer-box">
-              <p>We do not guarantee that:</p>
-              <ul>
-                <li>The service will meet your requirements</li>
-                <li>The service will be uninterrupted or error-free</li>
-                <li>Results from using the service will be accurate</li>
-                <li>Any errors will be corrected</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Limitation of Liability -->
-          <div id="limitation" class="content-section">
-            <h3>6. Limitation of Liability</h3>
-            <p>In no event shall we be liable for any indirect, punitive, incidental, special, consequential, or
-              exemplary damages arising out of or in connection with your use of the service.</p>
-          </div>
-
-          <!-- Indemnification -->
-          <div id="indemnification" class="content-section">
-            <h3>7. Indemnification</h3>
-            <p>You agree to defend, indemnify, and hold us harmless from and against any claims, liabilities, damages,
-              losses, and expenses arising out of your use of the service.</p>
-          </div>
-
-          <!-- Termination -->
-          <div id="termination" class="content-section">
-            <h3>8. Termination</h3>
-            <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason
-              whatsoever, including without limitation if you breach the Terms.</p>
-          </div>
-
-          <!-- Governing Law -->
-          <div id="governing-law" class="content-section">
-            <h3>9. Governing Law</h3>
-            <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country], without
-              regard to its conflict of law provisions.</p>
-          </div>
-
-          <!-- Changes -->
-          <div id="changes" class="content-section">
-            <h3>10. Changes to Terms</h3>
-            <p>We reserve the right to modify or replace these Terms at any time. We will provide notice of any changes
-              by posting the new Terms on this page.</p>
-            <div class="notice-box">
-              <i class="bi bi-bell"></i>
-              <p>By continuing to access or use our service after those revisions become effective, you agree to be
-                bound by the revised terms.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="tos-contact" data-aos="fade-up" data-aos-delay="300">
-          <div class="contact-box">
-            <!-- <div class="contact-icon">
-              <i class="bi bi-envelope"></i>
-            </div> -->
-            <div class="contact-content">
-              <h4>Questions About Terms?</h4>
-              <p>If you have any questions about these Terms, please contact us.</p>
-              <a href="contact.html" class="contact-link">Contact Support</a>
-            </div>
-          </div>
-        </div>
+  <div id="user-accounts" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">3. ユーザーアカウント</span>
+    </h3>
+    <p style="word-break: keep-all;">
+      アカウントを作成する際は、正確かつ完全で最新の情報を提供する必要があります。これを怠った場合は本規約の違反とみなされ、アカウントが直ちに停止される場合があります。
+    </p>
+    <div class="alert-box" style="background: #fff3cd; padding: 15px; border-radius: 8px; border: 1px solid #ffeeba; display: flex; gap: 15px;">
+      <i class="bi bi-exclamation-triangle" style="color: #856404;"></i>
+      <div class="alert-content">
+        <h5 style="margin: 0 0 5px; color: #856404;"><span style="display:inline-block;">重要な注意事項</span></h5>
+        <p style="margin: 0; font-size: 0.9rem; word-break: keep-all;">パスワードの管理、およびお客様のアカウント下で行われるすべての活動については、お客様自身が責任を負うものとします。</p>
       </div>
+    </div>
+  </div>
 
-    </section><!-- /Terms Of Service Section -->
+  <div id="prohibited" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">4. 禁止事項</span>
+    </h3>
+    <p style="word-break: keep-all;">当社が提供する目的以外でのサービスの利用やアクセスを禁じます。</p>
+    <div class="prohibited-list">
+      <div class="prohibited-item" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <i class="bi bi-x-circle" style="color: #dc3545;"></i>
+        <span style="word-break: keep-all;">データまたはコンテンツの体系的な取得（スクレイピング等）</span>
+      </div>
+      <div class="prohibited-item" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <i class="bi bi-x-circle" style="color: #dc3545;"></i>
+        <span style="word-break: keep-all;">悪意のあるコンテンツの投稿</span>
+      </div>
+      <div class="prohibited-item" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <i class="bi bi-x-circle" style="color: #dc3545;"></i>
+        <span style="word-break: keep-all;">許可なく本サービスをフレーム表示すること</span>
+      </div>
+      <div class="prohibited-item" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <i class="bi bi-x-circle" style="color: #dc3545;"></i>
+        <span style="word-break: keep-all;">不正アクセスを試みる行為</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="disclaimer" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">5. 免責事項</span>
+    </h3>
+    <p style="word-break: keep-all;">当サービスの利用は、お客様自身の責任において行われるものとします。本サービスは「現状有姿」かつ「提供可能な範囲」で提供され、明示的か黙示的かを問わず、いかなる保証もいたしません。</p>
+    <div class="disclaimer-box" style="background: #f1f3f5; padding: 15px; border-radius: 8px;">
+      <p style="margin-bottom: 10px; font-weight: bold;">当社は以下を保証しません：</p>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li style="word-break: keep-all;">サービスがお客様の要求を満たすこと</li>
+        <li style="word-break: keep-all;">サービスが中断せず、安全で、エラーがないこと</li>
+        <li style="word-break: keep-all;">サービス利用の結果が正確であること</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="limitation" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">6. 責任の制限</span>
+    </h3>
+    <p style="word-break: keep-all;">当社は、当サービスの利用に起因して発生したいかなる間接的、懲罰的、付随的、特別、または派生的な損害についても、一切の責任を負わないものとします。</p>
+  </div>
+
+  <div id="termination" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">7. 契約の終了</span>
+    </h3>
+    <p style="word-break: keep-all;">当社は、お客様が本規約に違反した場合を含め、理由の如何を問わず、事前の通知なしに直ちにアカウントを停止または終了させることができるものとします。</p>
+  </div>
+
+  <div id="governing-law" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">8. 準拠法</span>
+    </h3>
+    <p style="word-break: keep-all;">本規約は、日本法に準拠し、同法に従って解釈されるものとします。</p>
+  </div>
+
+  <div id="changes" class="content-section" style="margin-bottom: 30px;">
+    <h3 style="border-left: 4px solid #1a62d6; padding-left: 15px; margin-bottom: 15px;">
+      <span style="display:inline-block;">9. 規約の変更</span>
+    </h3>
+    <p style="word-break: keep-all;">当社はいつでも本規約を変更できる権利を留保します。変更の際は、このページに新しい規約を掲載することで通知いたします。</p>
+    <div class="notice-box" style="background: #e7f3ff; padding: 15px; border-radius: 8px; display: flex; gap: 10px; margin-top: 10px;">
+      <i class="bi bi-bell" style="color: #007bff;"></i>
+      <p style="margin: 0; font-size: 0.9rem; word-break: keep-all;">変更の発効後も引き続きサービスを利用される場合、お客様は変更後の規約に拘束されることに同意したものとみなされます。</p>
+    </div>
+  </div>
+</div>
+
+<div class="tos-contact" data-aos="fade-up" data-aos-delay="300" style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 12px; text-align: center;">
+  <div class="contact-box">
+    <div class="contact-content">
+      <h4 style="font-family: 'Hiragino Sans', sans-serif;"><span style="display:inline-block;">本規約に関するお問い合わせ</span></h4>
+      <p style="word-break: keep-all;">本利用規約についてご不明な点がございましたら、お気軽にお問い合わせください。</p>
+      <a href="contact.html" class="contact-link" style="display: inline-block; padding: 12px 30px; background-color: #1a62d6; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px;">お問い合わせはこちら</a>
+    </div>
+  </div>
+</div>
+    
+    <!-- /Terms Of Service Section -->
 
   </main>
 
@@ -365,26 +357,26 @@
               <a href="index.html" class="logo d-flex align-items-center mb-4">
                 <span class="sitename" translate="no"><h3>NAVIGATION PARTNERS LTD</h3></span>
               </a>
-              <p class="brand-description">Connecting Global Talent with Japanese Companies</p>
-              <p>Registered Support Organization for Specified Skilled Workers</p>
+              <p class="brand-description">グローバルな人材と日本企業をつなぐ</p>
+              <p>特定技能労働者向け登録支援機関</p>
 
 
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>ING Building II, Room 401, 8-10 Toyodamachi, Nakatsu City, Oita 871-0058, Japan</span>
+                  <span>INGビルII 401号室、〒871-0058 大分県中津市豊田町8-10</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
-                  <span>0979-33-8686</span>
+                  <span translate="no">0979-33-8686</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-phone"></i>
+                  <span translate="no">FAX: 0979-33-8687</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-envelope"></i>
-                  <span>FAX: 0979-33-8687</span>
-                </div>
-                <div class="contact-item">
-                  <i class="bi bi-envelope"></i>
-                  <span>worker_support@naviners.com</span>
+                  <span translate="no">worker_support@naviners.com</span>
                 </div>
               </div>
             </div>
@@ -396,7 +388,7 @@
 
                 <div class="col-6 col-lg-3">
                   <div class="nav-column">
-                    <h6>Map Location:</h6>
+                    <h6>オフィス所在地:</h6>
                     <nav class="footer-nav">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.23510719042!2d131.18434274836545!3d33.59920380477677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543fa086a492899%3A0xae0c035e948dcb61!2s10%20Toyodamachi%2C%20Nakatsu%2C%20Oita%20871-0058%2C%20Japan!5e0!3m2!1sen!2sph!4v1770692267560!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </nav>
@@ -405,45 +397,7 @@
 
 
 
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Services</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Resources</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
-                    </nav>
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-6 col-lg-3">
-                  <div class="nav-column">
-                    <h6>Connect</h6>
-                    <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
-                    </nav>
-                  </div>
-                </div> -->
-
+                
               </div>
             </div>
           </div>
@@ -470,12 +424,7 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="#!">Cookie Policy</a>
                 <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you've purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                </div>
+                 </div>
               </div>
             </div>
 
@@ -521,6 +470,13 @@
   '家':'ホ-ム', // home
   '会社概要' : '会社案内', // About Us
   '特定技能労働者向け登録支援組織' : '特定技能労働者向け登録支援機関', //Registered Support Organization for Specified Skilled Workers
+   'top talent from around the world' : 'Global Talent', // banner text fix translation
+  'inquiry' : 'Contact Us', // fix translation for contact us
+  'service' : 'Services', // fix translation for Services
+  'Company Profile' : 'About Us', // fix translation for About Us
+  'reservation' : 'Set Appointment', // fix translation for Set Appointment
+  'terms of Service' : 'Terms of Services', //fix translation for Terms of Services
+  'privacy' : 'Privacy', //fix translation for Privacy
 };
 
 const observer = new MutationObserver((mutations) => {
