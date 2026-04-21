@@ -6365,12 +6365,3 @@ blockquote {
   padding: 15px;
 }
 
-/* This part is invisible to the GTranslate AI */
-.fix-word::before {
-  content: "業務";
-}
-
-/* If it is also breaking the word '作業' (Work/Task) */
-.fix-task::before {
-    content: "作業";
-}
