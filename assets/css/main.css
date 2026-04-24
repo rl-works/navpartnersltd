@@ -6373,3 +6373,13 @@ body {
 
 /* Optional: If you have specific headers that MUST be uppercase, 
    target them specifically rather than globally. */
+
+/* Force the first letter of each list item to be uppercase */
+.service-info h5::first-letter {
+    text-transform: uppercase;
+}
+
+/* Ensure no other weird capitalization is being forced by existing CSS */
+.service-info h5 {
+    text-transform: none;
+}
