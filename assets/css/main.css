@@ -6365,3 +6365,11 @@ blockquote {
   padding: 15px;
 }
 
+/* Prevent CSS from forcing case changes on translated text */
+.gtranslate_wrapper, 
+body {
+    text-transform: none !important;
+}
+
+/* Optional: If you have specific headers that MUST be uppercase, 
+   target them specifically rather than globally. */
