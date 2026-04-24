@@ -181,6 +181,27 @@
         if (attempts++ > 30) clearInterval(checkWidget);
     }, 200);
 })();
+
+function fixCasing() {
+    // Select the main content areas of your site
+    const elements = document.querySelectorAll('p, h1, h2, h3, h4, span, li, a');
+    
+    elements.forEach(el => {
+        // We only want to touch text nodes that have been translated
+        if (el.innerText && el.innerText.length > 0) {
+            let text = el.innerText.trim();
+            // Simple fix: Ensure the first letter is uppercase if it's English/Latin script
+            el.style.textTransform = "none"; 
+        }
+    });
+}
+
+// Run the fix when the language is changed
+document.addEventListener('change', function(e) {
+    if (e.target && e.target.classList.contains('gt_selector')) {
+        setTimeout(fixCasing, 500); // Wait half a second for translation to finish
+    }
+});
 </script>
 
             </li>
