@@ -1061,41 +1061,6 @@ function startObserving() {
 startObserving();
 </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const htmlElement = document.documentElement;
-      const imageElement = document.getElementById('service-image');
-
-      // Function to check the language and swap the image
-      function checkLanguage() {
-        if (!imageElement) return;
-        
-        const currentLang = htmlElement.getAttribute('lang');
-        
-        // If Google Translate sets the language to English ('en')
-        if (currentLang && currentLang.toLowerCase().startsWith('en')) {
-          imageElement.src = 'assets/img/newservice-eng.jpg';
-        } else {
-          imageElement.src = 'assets/img/newservice-ja.jpg';
-        }
-      }
-
-      // 1. Run the check immediately on load
-      checkLanguage();
-
-      // 2. Watch for Google Translate changing the <html lang="..."> attribute
-      const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.attributeName === 'lang') {
-            checkLanguage();
-          }
-        });
-      });
-
-      observer.observe(htmlElement, { attributes: true });
-    });
-  </script>
-
 </body>
 
 </html>
