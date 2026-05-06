@@ -507,23 +507,23 @@
     </section>
 
     <section>
-      <div class="container" data-aos="fade-up">
-    <div class="row gy-4 align-items-center">
-      
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="content-box ps-0 ps-lg-5">
-          <h2 class="notranslate">Housekeeping Service</h2>
-         
-        </div>
+  <div class="container" data-aos="fade-up">
+    
+    <div class="row mb-4">
+      <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="notranslate display-5 fw-bold">Housekeeping Service</h2>
+          <small class="text-muted" style="font-size: 0.85rem;">家事代行</small>
       </div>
-
-      <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/newservice-ja.jpg" class="img-fluid rounded-4 shadow" alt="Housekeeping Service">
-      </div>
-
     </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="zoom-out" data-aos-delay="200">
+       <img id="service-image" src="assets/img/newservice-ja.jpg" class="img-fluid rounded-4 shadow d-block mx-auto" alt="Housekeeping Service">
+      </div>
+    </div>
+
   </div>
-    </section>
+</section>
 
     
     <section id="automotive-services" class="section">
@@ -1061,7 +1061,40 @@ function startObserving() {
 startObserving();
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const htmlElement = document.documentElement;
+      const imageElement = document.getElementById('service-image');
 
+      // Function to check the language and swap the image
+      function checkLanguage() {
+        if (!imageElement) return;
+        
+        const currentLang = htmlElement.getAttribute('lang');
+        
+        // If Google Translate sets the language to English ('en')
+        if (currentLang && currentLang.toLowerCase().startsWith('en')) {
+          imageElement.src = 'assets/img/newservice-eng.jpg';
+        } else {
+          imageElement.src = 'assets/img/newservice-ja.jpg';
+        }
+      }
+
+      // 1. Run the check immediately on load
+      checkLanguage();
+
+      // 2. Watch for Google Translate changing the <html lang="..."> attribute
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === 'lang') {
+            checkLanguage();
+          }
+        });
+      });
+
+      observer.observe(htmlElement, { attributes: true });
+    });
+  </script>
 
 </body>
 
